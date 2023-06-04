@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <html lang="ru"> </html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <header>
+            <h1> Заявка на принятие в команду</h1>
+        </header>
+        <main>
+            <form  method="get">
+            <label> 
+                Имя <input type="text" name="userName" placeholder="Введите свое имя" required>
+            </label>
+                <p>
+                    <label> Почта
+                        <input  name="mail" type="email" placeholder="example@somemail.xxx" required>
+                     </label>
+                </p>
+            </label>
+            <label> Пароль <input type="password" name="password" placeholder=">8 символов" required> </label>
+            
+            <form>
+                <p>
+                    <label> Телефон:
+                        <input  pattern type="tel" name="tel" placeholder="8-***-***-**-**" required>
+                    </label>
+                     </p>  
+                    </form>
+            
+            <label for="pol"> Пол </label>
+            
+                <label>
+                <input type="radio" name="eduorg" value="male">
+                Мужской
+                </label> 
+                
+                <label>
+                    <input type="radio" name="eduorg" value="female"> 
+                    Женский
+                    </label> 
+                    
+
+                        <label>
+                        <p> 
+                        <id="question"> Имею скилл в:</label>
+                        <input id="question" type="checkbox" value="yes" name="CS" > CS
+                        <input id="question" type="checkbox" value="yes" name="Dota" > Dota
+                        <input id="question" type="checkbox" value="yes" name="OverWatch" disabled> OverWatch
+                         </p>
+                        
+                        <form>
+                            <p> 
+                         <label for="description"> Кратко о себе</label> 
+                        </p>
+                         <textarea id="description" type="text" name="description" rows="5" cols="20"></textarea>   
+                        </form>
+                        <P>
+                            <label>Прикрепи фото
+                                
+                            <input  type="file" name="profilepic" enctype="multipart/form-data" disabled> 
+                        
+                            </label>
+                             </P>  
+                     <p>
+                     <label> Играешь на своем компе</label>
+                     <p><select name="pc">
+                        <option value="Yes,-only-from-home">Да, только из дома</option>
+                        <option value="No,-I-can-on-your">Нет, могу на вашем</option>
+                        <option  selected value="Yes,I-can-play-the-laptop-from-anywhere" checked> Да, ноут могу играть откуда угодно</option>
+                        
+                    </p>
+                        </select>
+                     </p>  
+                     <input type="reset" name="reset" value="Сбросить">
+                        </form>
+                            <p><input type="submit"></p>
+                           </form>
+        </main>
+    </body>
+</html>
